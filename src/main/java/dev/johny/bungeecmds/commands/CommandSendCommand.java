@@ -27,7 +27,7 @@ public class CommandSendCommand extends Commands{
             }
         }
         if(args.length <= 1) {
-            sender.sendMessage(new TextComponent("§cUso correto: <servidor> <comando>"));
+            sender.sendMessage(new TextComponent("§cUso correto: sendcommandbungee <servidor> <comando>"));
             return;
         }
         CachedRowSet query = Backend.getInstance().query("SELECT * FROM `bungeecmds` WHERE servername='" + args[0] + "'");
